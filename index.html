@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScentIce – Luxury Fragrances</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#C9A24D',
+            goldSoft: '#E0C36E',
+            darkBg: '#0B0B0B',
+            textGray: '#B5B5B5'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-video {
+    transition: opacity 1.5s ease-in-out;}
+
+    .view-more-btn {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .arrow-move {
+    transition: transform 0.3s ease;
+  }
+
+  .view-more-btn:hover .arrow-move {
+    transform: translateX(6px);
+  }
+  </style>
+</head>
+
+<body class="bg-darkBg text-white">
+
+  <section class="relative min-h-screen overflow-hidden">
+
+  <!-- VIDEO SLIDES -->
+  <div class="absolute inset-0">
+
+    <video class="hero-video absolute inset-0 w-full h-full object-cover opacity-100"
+      autoplay muted loop playsinline>
+      <source src="images/WhatsApp Video 2026-01-15 at 11.52.16.mp4" type="video/mp4">
+    </video>
+
+    <video class="hero-video absolute inset-0 w-full h-full object-cover opacity-0"
+      autoplay muted loop playsinline>
+      <source src="images/WhatsApp Video 2026-01-15 at 11.52.28.mp4" type="video/mp4">
+    </video>
+
+    <video class="hero-video absolute inset-0 w-full h-full object-cover opacity-0"
+      autoplay muted loop playsinline>
+      <source src="images/WhatsApp Video 2026-01-15 at 11.52.43.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <!-- DARK OVERLAY -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- HERO CONTENT -->
+  <div class="relative z-10 min-h-screen flex items-center justify-center px-6 text-center">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gold">
+        ScentIce Eden
+      </h1>
+
+      <p class="text-textGray text-lg mb-10">
+        A signature of luxury, confidence, and timeless fragrance.
+      </p>
+
+      <div class="flex flex-col md:flex-row gap-4 justify-center">
+        <a href="#products"
+           class="bg-gold text-black px-8 py-3 rounded-full font-semibold hover:bg-goldSoft transition">
+          Shop Collection
+        </a>
+
+        <a href="https://wa.me/c/160485882261689"
+           class="border border-gold text-gold px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-black transition">
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+  <!-- ABOUT -->
+  <section class="px-6 py-20 bg-black">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gold">About ScentIce</h2>
+      <p class="text-textGray leading-relaxed">
+        ScentIce is a premium fragrance brand built on elegance,
+        identity, and confidence. Each scent is carefully selected
+        to deliver long-lasting performance and a refined presence.
+      </p>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="px-6 py-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-14 text-gold">
+        Our Collection
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- PRODUCT -->
+        <div class="bg-black border border-gold/20 rounded-2xl p-6 text-center">
+          <img
+            src="images/WhatsApp Image 2026-01-15 at 11.52.46.jpeg"
+            alt="Elysia"
+            class="h-48 w-full object-cover rounded-xl mb-6"
+            />
+          <h3 class="text-xl font-semibold text-gold">Elysia</h3>
+          <p class="text-textGray text-sm my-3">
+            Dark, bold, and irresistibly masculine.
+          </p>
+          <p class="font-bold text-lg mb-5 text-white">GHS 170</p>
+          <a href="https://wa.me/c/160485882261689"
+             class="inline-block bg-gold text-black px-6 py-2 rounded-full font-semibold hover:bg-goldSoft transition">
+            Buy via WhatsApp
+          </a>
+        </div>
+
+        <div class="bg-black border border-gold/20 rounded-2xl p-6 text-center">
+          <img
+            src="images/nect.jpeg"
+            alt="Nec"
+            class="h-48 w-full object-cover rounded-xl mb-6"
+            />
+          <h3 class="text-xl font-semibold text-gold">Nectar of Ecstacy</h3>
+          <p class="text-textGray text-sm my-3">
+            Soft, elegant, and beautifully feminine.
+          </p>
+          <p class="font-bold text-lg mb-5 text-white">GHS 220</p>
+          <a href="https://wa.me/c/160485882261689"
+             class="inline-block bg-gold text-black px-6 py-2 rounded-full font-semibold hover:bg-goldSoft transition">
+            Buy via WhatsApp
+          </a>
+        </div>
+
+        <div class="bg-black border border-gold/20 rounded-2xl p-6 text-center">
+          <img
+            src="images/van.jpeg"
+            alt="van"
+            class="h-48 w-full object-cover rounded-xl mb-6"
+            />
+          <h3 class="text-xl font-semibold text-gold">Vanille Bouquet</h3>
+          <p class="text-textGray text-sm my-3">
+            A royal blend for lasting impressions.
+          </p>
+          <p class="font-bold text-lg mb-5 text-white">GHS 150</p>
+          <a href="https://wa.me/c/160485882261689"
+             class="inline-block bg-gold text-black px-6 py-2 rounded-full font-semibold hover:bg-goldSoft transition">
+            Buy via WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center mt-14">
+  <a
+    href="https://scentice.netlify.app/"
+    target="_blank"
+    class="view-more-btn inline-flex items-center gap-2 text-gold border border-gold px-8 py-3 rounded-full font-semibold hover:bg-gold hover:text-black transition"
+  >
+    View More Products
+    <span class="arrow-move">→</span>
+  </a>
+</div>
+
+
+  <!-- LEAD CAPTURE -->
+  <section class="px-6 py-20 bg-black">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-gold">
+        Exclusive Offers
+      </h2>
+
+      <p class="text-textGray mb-8">
+        Be the first to know about new releases and special discounts.
+      </p>
+
+      <form
+  action="https://formspree.io/f/mkoolkov"
+  method="POST"
+  class="space-y-4"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gold/30 text-white focus:outline-none"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gold/30 text-white focus:outline-none"
+  />
+
+  <input
+    type="text"
+    name="phone"
+    placeholder="Phone Number"
+    class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gold/30 text-white focus:outline-none"
+  />
+
+  <button
+    type="submit"
+    class="w-full bg-gold text-black py-3 rounded-full font-semibold hover:bg-goldSoft transition"
+  >
+    Join the List
+  </button>
+</form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="px-6 py-10 text-center text-textGray">
+    © 2026 ScentIce. Luxury in every drop.
+  </footer>
+
+
+  <script>
+  const videos = document.querySelectorAll('.hero-video');
+  let current = 0;
+
+  setInterval(() => {
+    videos[current].classList.remove('opacity-100');
+    videos[current].classList.add('opacity-0');
+
+    current = (current + 1) % videos.length;
+
+    videos[current].classList.remove('opacity-0');
+    videos[current].classList.add('opacity-100');
+  }, 6000); // change slide every 6 seconds
+</script>
+
+
+</body>
+</html>
